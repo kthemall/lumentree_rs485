@@ -4,3 +4,10 @@ Battery Power
 Grid Power
 Home Load
 
+Prerequisites:
+ESP8266
+RS485 module
+Ethernet Cable
+
+
+
