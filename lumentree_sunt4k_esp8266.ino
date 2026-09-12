@@ -6,16 +6,16 @@
 // --------------------------------------------------
 // WLAN
 // --------------------------------------------------
-const char* ssid     = "";
-const char* password = "";
+const char* ssid     = ""; //WLAN SSID
+const char* password = ""; //WLAN Password
 
 // --------------------------------------------------
 // MQTT
 // --------------------------------------------------
-const char* mqtt_server = ""; ip-adresse des mqtt servers
-const int   mqtt_port   = 1883;
-const char* mqtt_user   = ""; 
-const char* mqtt_pass   = "";
+const char* mqtt_server = ""; //ip-adresse des mqtt servers
+const int   mqtt_port   = 1883; //ip port des mqtt servers
+const char* mqtt_user   = "";  //mqtt user
+const char* mqtt_pass   = ""; //mqtt password
 
 WiFiClient espClient;
 PubSubClient mqttClient(espClient);
@@ -23,7 +23,7 @@ PubSubClient mqttClient(espClient);
 // --------------------------------------------------
 // ESP8266 ESP-12F
 // --------------------------------------------------
-#define RX_PIN    12
+#define RX_PIN    12 
 #define TX_PIN    13
 #define DE_RE_PIN 4
 
