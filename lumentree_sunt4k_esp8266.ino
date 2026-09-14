@@ -91,7 +91,7 @@ void mqttReconnect()
     Serial.print("MQTT verbinden...");
 
     if (mqttClient.connect(
-          "Lumentree1Monitor",
+          "Lumentree2Monitor",
           mqtt_user,
           mqtt_pass))
     {
@@ -197,19 +197,19 @@ void publishValues()
 
   snprintf(payload, sizeof(payload), "%d", gridPower);
   mqttClient.publish(
-      "lumentree1/grid_power",
+      "lumentree2/grid_power",
       payload,
       true);
 
   snprintf(payload, sizeof(payload), "%d", batteryPower);
   mqttClient.publish(
-      "lumentree1/battery_power",
+      "lumentree2/battery_power",
       payload,
       true);
 
   snprintf(payload, sizeof(payload), "%d", homeLoad);
   mqttClient.publish(
-      "lumentree1/home_load",
+      "lumentree2/home_load",
       payload,
       true);
 
@@ -253,7 +253,7 @@ void setup()
 
   Serial.println();
   Serial.println("========================================");
-  Serial.println("LUMENTREE1 MQTT MONITOR");
+  Serial.println("LUMENTREE2 MQTT MONITOR");
   Serial.println("========================================");
 }
 
